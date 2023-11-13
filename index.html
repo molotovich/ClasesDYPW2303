@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Titulos UMAEE</title>
+    <meta name="author" content="Fernando Miguel Carmona Casanova" />
+    <meta name="description" content="Sistema de captura de titulos UMAEE" />
+    <meta name="generator" content="Visual Studio Code 1.84 + Windows 11" />
+    <link rel="stylesheet" href="Css/estilo.css" />
+  </head>
+
+  <body>
+    <h1>Sistema de Titulos UMAEE</h1>
+    <h2>Captura de Titulo</h2>
+    <p>Introduzca la información solicitada:<br></p>
+    <h3>parte frontal</h3>
+    <form id="formulario">
+        Nombre <input name="nombre" type="text"></input><br>
+        CURP <input name="curp" type="text"></input><br>
+        <label for="carrera">Carrera</label>
+        <select name="carrera" id="carrera">
+            <option value="Administración y Gestión de Negocios">Administración y Gestión de Negocios</option>
+            <option value="Mercadotecnia y Negocios Digitales">Mercadotecnia y Negocios Digitales</option>
+            <option value="Publicidad">Publicidad</option>
+            <option value="Derecho Adversarial">Derecho Adversarial</option>
+            <option value="Ciencias Criminológicas Adversariales">Ciencias Criminológicas Adversariales</option>
+            <option value="Ingeniería en Sistemas Computacionales">Ingeniería en Sistemas Computacionales</option>
+        </select><br>
+        <label for="rvoe">RVOE</label>
+        <select name="rvoe" id="rvoe">
+            <option value="1502423">Administración y Gestión de Negocios Mixto</option>
+            <option value="2102843">Administración y Gestión de Negocios No Escolarizado</option>
+            <option value="1604497">Mercadotecnia y Negocios Digitales Mixto</option>
+            <option value="2202915">Mercadotecnia y Negocios Digitales No Escolarizado</option>
+            <option value="1502422">Publicidad Mixta</option>
+            <option value="2202862">Publicidad No Escolarizada</option>
+            <option value="1502420">Derecho Adversarial Mixta</option>
+            <option value="2002798">Derecho Adversarial No Escolarizada</option>
+            <option value="1502421">Ciencias Criminológicas Adversariales Mixta</option>
+            <option value="2002800">Ciencias Criminológicas y Criminalísticas Adversariales Mixta</option>
+            <option value="2002799">Ciencias Criminológicas y Criminalísticas Adversariales No Escolarizada</option>
+            <option value="1502424">Ingeniería en Sistemas Computacionales Mixta</option>
+            <option value="2102844">Ingeniería en Sistemas Computacionales No Escolarizada</option>
+        </select><br>
+        <label for="modalidad">Carrera</label>
+        <select name="Modalidad" id="Modalidad">
+            <option value="Diplomado de Titulación">Diplomado</option>
+            <option value="Automática por Promedio">Automática</option>
+            <option value="Por Tésis">Tésis</option>
+            <option value="Por Estudios de Maestría">Maestría</option>
+        </select><br>
+        Fecha de Terminación Día <input name="dia_terminacion" type="number" min="1" max="31" step="1">
+        Mes y Año <input name="mes_ano_terminacion" type="month"></input><br>
+        Fecha de Expedición Día <input name="dia_expedicion" type="number" min="1" max="31" step="1">
+        Mes y Año <input name="mes_ano_expedicion" type="month"></input><br>
+        <h3>parte trasera</h3>
+        CCT Bachillerato <input name="cct_bach" type="text" /><br>
+        Nombre de la Preparatoria <input name="preparatoria" type="text"/><br>
+        Inicio Bachillerato <input name="Inicio_bachillerato" type="date"/>Fin Bachillerato <input name="fin_bachillerato" type="date"/><br>
+        Entidad Federativa <input name="entidad_bach" type="text"/>        
+        <input name="cve_dgp" type="hidden" value="270154"/><br>
+        Clave Carrera DGP <input name="text"/><br>
+        Inicio Carrera <input name="Inicio_carrera" type="date"/>Fin Carrera <input name="fin_carrera" type="date"/><br>
+        <label for="metodo">Metodo de Egreso</label>
+        <select name="Metodo" id="Metodo">
+            <option value="DIPLOMADO DE TITULACIÓN">Diplomado</option>
+            <option value="AUTOMÁTICA POR PROMEDIO">Automática</option>
+            <option value="POR TESIS">Tésis</option>
+            <option value="POR ESTUDIOS DE MAESTRÍA">Maestría</option>
+        </select><br>
+
+
+
+        <br><input type="submit" value="Enviar formulario" />
+        <input type="reset" value="Reiniciar"/>
+    </form>
+  </body>
+</html>
